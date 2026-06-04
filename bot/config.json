@@ -1,0 +1,65 @@
+{
+    "reddit": {
+        "client_id": "YOUR_CLIENT_ID",
+        "client_secret": "YOUR_CLIENT_SECRET",
+        "user_agent": "ReferralBot v1.0 (by /u/YOUR_USERNAME)",
+        "username": "YOUR_USERNAME",
+        "password": "YOUR_PASSWORD"
+    },
+    "bot": {
+        "subreddits": [
+            "SuggestALaptop", "homeoffice", "officechairs", "productivity", "BuyItForLife", 
+            "VPN", "workfromhome", "college", "EngineeringStudents", "webdev", 
+            "startups", "freelance", "digitalnomad", "PrivacyGuides", "SaaS", 
+            "Ergonomics", "Monitors", "macsetups", "buildapc"
+        ],
+        "tiers": {
+            "tier1": ["SuggestALaptop", "homeoffice", "officechairs", "productivity", "BuyItForLife", "VPN", "workfromhome"],
+            "tier2": ["college", "EngineeringStudents", "webdev", "startups", "freelance", "digitalnomad", "PrivacyGuides"],
+            "tier3": ["SaaS", "Ergonomics", "Monitors", "macsetups", "buildapc"]
+        },
+        "persona": {
+            "name": "Alex",
+            "voice": "Helpful Expert",
+            "tone": "Informed, conversational, balanced"
+        },
+        "categories": {
+            "laptops": {
+                "keywords": ["best laptop for college students", "best laptop for programming under $1000", "MacBook Air vs Dell XPS", "best budget laptop for remote work", "laptop for video editing under $1500", "what laptop should I buy for engineering school", "best Chromebook vs Windows laptop", "laptop with best battery life for students"],
+                "template": "Great question! A few things to consider:\n\n**For most students** — prioritize battery life (15+ hours) and portability (under 3.5 lbs). You'll thank yourself during back-to-back classes.\n\n**For engineering/CS students** — check software requirements first. Some engineering tools are Windows-only, which narrows your options.\n\n**For tight budgets** — don't overlook the mid-range. The gap between $500 and $800 laptops is much bigger than the gap between $800 and $1,200.\n\nI actually put together a detailed comparison of the top student laptops this year — MacBook Air M3 vs Dell XPS 14 vs budget options like the Acer Aspire 5. It breaks down specs, battery tests, and real-world performance for different majors. Might save you some research time:\n\n**[Best Laptops for Students in 2025 — Full Comparison](https://nexusinsightmedia.github.io/home-team-shared-nexus-insight-media-dist/reviews/review-01-best-laptop-for-students-2025.html)**"
+            },
+            "monitors": {
+                "keywords": ["best monitor for work from home", "best 4K monitor for programming", "USB-C monitor for MacBook Pro recommendation", "best ultrawide monitor for productivity", "budget 4K monitor under $400"],
+                "template": "A good monitor makes a bigger difference to WFH comfort than almost any other upgrade. Here's what I'd think about:\n\n**USB-C with power delivery** is the killer feature — one cable for video + charging + peripherals. A game-changer for laptop users.\n\n**27\" 4K is the sweet spot** for most people. 24\" is too small for split-screen work, and 32\" can feel overwhelming without good desk depth.\n\n**IPS Black panels** (like the Dell U2724DE) offer much better contrast than standard IPS — makes a real difference for reading and code.\n\nI wrote up a comparison of the best home office monitors I tested this year, from value picks to ultrawides:\n\n**[Best Monitors for Home Office 2025 — Reviewed](https://nexusinsightmedia.github.io/home-team-shared-nexus-insight-media-dist/reviews/review-02-best-monitors-home-office-2025.html)**"
+            },
+            "chairs": {
+                "keywords": ["best ergonomic office chair", "Herman Miller Aeron vs Steelcase", "best budget ergonomic chair under $500", "gaming chair vs ergonomic office chair for WFH"],
+                "template": "Your back will thank you for asking this before buying. A few tips from my testing:\n\n**Don't buy a \"gaming\" chair** if you're sitting 6+ hours — they look cool but lack proper lumbar support. A good ergonomic office chair is worth the investment.\n\n**The used market is your friend** — Aerons and Steelcases get liquidated by offices regularly. You can find $1,400 chairs for $400-700 on Facebook Marketplace.\n\n**Seat depth adjustment** is a must-try feature. If your thighs are supported but your calves aren't compressed, you've found the right fit.\n\nI spent 40 hours testing 8 chairs from budget to premium. Here's my full comparison:\n\n**[Best Ergonomic Office Chairs for 2025 — Full Guide](https://nexusinsightmedia.github.io/home-team-shared-nexus-insight-media-dist/reviews/review-03-best-ergonomic-office-chair-2025.html)**"
+            },
+            "saas": {
+                "keywords": ["best project management software for small team", "Notion vs Linear vs Monday.com comparison", "free project management tool for freelancers", "best kanban board app"],
+                "template": "The right PM tool depends a lot on your team size and workflow style:\n\n**Solo / freelancers** — Trello is simple and free. Notion is more powerful but has a learning curve.\n\n**Small teams (2-10)** — Notion or Linear. Notion is more flexible (docs + databases + tasks), Linear is faster and better for agile.\n\n**Growing teams (10+)** — Monday.com scales well with automations and reporting.\n\n**Engineering teams** — Linear is the fastest, most developer-friendly tool I've used. Designed for cycles, not just boards.\n\nI compared the top 4 PM platforms side-by-side with pricing breakdowns:\n\n**[Best Project Management Software 2025 — Comparison](https://nexusinsightmedia.github.io/home-team-shared-nexus-insight-media-dist/reviews/review-04-best-project-management-software-2025.html)**"
+            },
+            "vpns_privacy": {
+                "keywords": ["best VPN for privacy", "VPN with no logs", "NordVPN vs Mullvad", "secure VPN"],
+                "template": "For privacy specifically, here's what to look for:\n\n**Audited no-logs policy** is non-negotiable. If they haven't been independently audited, assume they log.\n\n**RAM-only servers** mean data is wiped on every reboot — important if you're privacy-conscious.\n\n**Mullvad** is the gold standard for privacy (anonymous accounts, accepts cash, open-source). NordVPN is a close second with better speeds.\n\n**Avoid free VPNs** — if the product is free, you're the product.\n\nI did a full comparison of 12 VPNs testing speed, privacy, and streaming performance:\n\n**[Best VPN Services 2025 — Tested & Reviewed](https://nexusinsightmedia.github.io/home-team-shared-nexus-insight-media-dist/reviews/review-05-best-vpn-services-2025.html)**"
+            },
+            "vpns_streaming": {
+                "keywords": ["VPN for Netflix", "streaming VPN", "unblock Netflix", "VPN for travel streaming"],
+                "template": "If streaming is your main use case, speed and unblocking ability matter most:\n\n**ExpressVPN** has been the most reliable for unblocking Netflix, BBC iPlayer, and Hulu in my testing. It's expensive but consistent.\n\n**NordVPN** is a close second and much better value on the 2-year plan ($3.69/mo). Their SmartPlay feature handles most streaming services well.\n\n**One tip** — streaming-optimized servers make a difference. Don't just connect to the fastest server, use the ones labeled for streaming.\n\nFull breakdown with speed test results and streaming compatibility:\n\n**[Best VPN Services 2025 — Streaming Edition](https://nexusinsightmedia.github.io/home-team-shared-nexus-insight-media-dist/reviews/review-05-best-vpn-services-2025.html)**"
+            },
+            "setup": {
+                "keywords": ["home office setup", "WFH setup under budget", "building my home office"],
+                "template": "Building a home office from scratch? Here's my recommended priority order:\n\n**1. Monitor** — single best productivity upgrade. 27\" 4K with USB-C is the sweet spot.\n**2. Chair** — you'll spend 2,000+ hours in it. A good ergonomic chair pays for itself in back pain avoided.\n**3. Desk** — a standing desk is nice but optional. A sturdy table at the right height matters more.\n**4. Lighting** — a simple desk lamp with adjustable color temperature reduces eye strain dramatically.\n\nI've reviewed the best monitors and chairs this year if you want specifics:\n\n**[Best Monitors for Home Office →](https://nexusinsightmedia.github.io/home-team-shared-nexus-insight-media-dist/reviews/review-02-best-monitors-home-office-2025.html)**\n**[Best Ergonomic Chairs →](https://nexusinsightmedia.github.io/home-team-shared-nexus-insight-media-dist/reviews/review-03-best-ergonomic-office-chair-2025.html)**"
+            }
+        },
+        "settings": {
+            "daily_comment_limit": 20,
+            "link_ratio": 0.4,
+            "min_delay_minutes": 12,
+            "max_delay_minutes": 45,
+            "max_post_age_hours": 24,
+            "simulation_mode": true
+        }
+    }
+}
